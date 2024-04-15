@@ -1,5 +1,5 @@
 # Use the latest Node.js image from AWS
-FROM public.ecr.aws/docker/library/node:16-latest
+FROM node:16-alpine as build
 
 # Set the working directory to /app
 WORKDIR /app
